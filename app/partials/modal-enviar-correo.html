@@ -1,0 +1,25 @@
+<section class="modal-box" data-role="modal-content">
+    <form action="" method="" class="gridle-row" data-module="common-form" data-validzr-handled="true" novalidate>
+        <div class="gridle-gr-12 font-centered">
+            <h3 class="modal-box__title">Enviar por correo</h3>
+        </div>
+        <div class="form-control gridle-gr-12" data-error-message="Debe contener solo valores alfabéticos">
+            <label for="enviar-correo-nombre" class="form-control__label">Tu nombre:</label>
+            <input type="text" class="form-control__field" name="enviar-correo-nombre" placeholder="Ingresa tu nombre" required>
+            <span class="form-control__text">Debe contener solo valores alfabéticos. Ejemplo: Francisco</span>
+        </div>
+        <div class="form-control gridle-gr-12" data-error-message="Ingresa sólo correos válidos">
+            <label for="enviar-correo-para" class="form-control__label">Para:</label>
+            <input type="text" class="form-control__field" name="enviar-correo-para" placeholder="nombre1@email.com, nombre2@email.com" required>
+            <span class="form-control__text">Ingresa sólo correos válidos. Ejemplo: nombre@email.com</span>
+        </div>
+        <div class="form-control gridle-gr-12" data-error-message="Agrega una nota">
+            <label for="enviar-correo-nota" class="form-control__label">Agregar nota</label>
+            <textarea name="enviar-correo-nota" rows="5" class="form-control__field" placeholder="Escribe aquí un mensaje personal" required></textarea>
+            <span class="form-control__text">Debe contener solo valores alfabéticos</span>
+        </div>
+        <div class="form-control gridle-gr-12 font-centered">
+            <button type="submit" class="button button--full button--dark">Enviar</button>
+        </div>
+    </form>
+</section>

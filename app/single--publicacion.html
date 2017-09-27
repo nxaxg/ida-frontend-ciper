@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400, 400i,700|Merriweather:300,400,500,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-bar">
+        <section class="top-bar">
+            <div class="container" data-area-name="menu-top">
+                <div class="top-bar__items" data-mq-change="tablet" data-match-area="menu-top@tablet" data-unmatch-area="menu-top">
+                    <div class="top-bar__items top-bar__items--left">
+                        <a href="modulos.html" class="top-bar__item top-bar__item--current">Módulos Ciper</a>
+                        <a href="#" class="top-bar__item">Cartas a la directora</a>
+                    </div>
+                    <div class="top-bar__items top-bar__items--right">
+                        <span class="top-bar__item upper">Archivo:</span>
+                        <a href="archivo.html" class="top-bar__item">Archivo</a>
+                        <a href="search.html" class="top-bar__item">Búsqueda</a>
+                        <a href="fundacion--donacion.html" class="top-bar__item">Fundacion 1</a>
+                        <a href="fundacion--suscripcion.html" class="top-bar__item">Fundacion 2</a>
+                        <a href="#" class="top-bar__item--last">Denuncias y datos</a>
+                        <a href="#" class="button button--top">Donar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="nav-bar" data-module="nav-bar">
+            <div class="container">
+                <div class="nav-bar__holder">
+                    <div class="nav-bar__brand">
+                        <a class="app-brand app-brand--inline" href="index.html">
+                                                    <img class="app-brand__logo" src="images/logos/ciper_logo_light.svg" alt=""/>
+                                                </a>
+                    </div>
+                    <div class="nav-bar__body" data-role="nav-body">
+                        <button class="nav-bar__deploy-button" aria-label="Ver menú" data-role="nav-deployer">
+                                                    <span></span>
+                                                </button>
+                        <div class="search-form">
+                            <button id="search-deployer" class="search-btn icon-elem icon-elem--search">
+                                                    </button>
+                        </div>
+                        <div class="nav-bar__menu-holder">
+                            <ul class="nav-bar__menu nav-bar__menu--primary">
+                                <li class="menu-item hideme showme--at-tablet">
+                                    <a href="index.html" title="title">Inicio</a>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="index.html">Tipos home</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="home--especial.html" title="title">Home especial</a></li>
+                                        <li class="submenu__item"><a href="home--personaje.html" title="title">Home personaje</a></li>
+                                        <li class="submenu__item"><a href="home--foto.html" title="title">Home foto</a></li>
+                                        <li class="submenu__item"><a href="home--no-foto.html" title="title">Home sin foto</a></li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="portadilla.html">Portadillas</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="portadilla--autores.html" title="title">Portadilla autores</a></li>
+                                        <li class="submenu__item"><a href="portadilla--debate.html" title="title">Portadilla debate</a></li>
+                                        <li class="submenu__item"><a href="portadilla--especiales.html" title="title">Portadilla especiales</a></li>
+                                        <li class="submenu__item"><a href="portadilla--personajes.html" title="title">Portadilla personajes</a></li>
+                                        <li class="submenu__item"><a href="portadilla--sin-bajada.html" title="title">Portadilla sin bajada</a></li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="#">Single</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="single--autor.html" title="title">Single autor</a></li>
+                                        <li class="submenu__item"><a href="single--especial.html" title="title">Single especial</a></li>
+                                        <li class="submenu__item"><a href="single--personaje.html" title="title">Single personaje</a></li>
+                                        <li class="submenu__item"><a href="single--publicacion.html" title="title">Single publicación</a></li>
+                                        <li class="submenu__item"><a href="single--pagina.html" title="title">Single página</a></li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="radar.html" title="title">Radar</a>
+                                </li>
+                                <li class="menu-item hideme--at-medium">
+                                    <form action="" method="" class="search-box">
+                                        <input type="text" class="search-box__input" placeholder="Buscar">
+                                        <!-- <button class="search-box__btn icon-elem icon-elem--search"></button> -->
+                                        <a href="search.html" class="search-box__btn icon-elem icon-elem--search" title="title"></a>
+                                    </form>
+                                </li>
+                            </ul>
+                            <ul class="nav-bar__menu nav-bar__menu--primary hideme showme--at-tablet">
+                                <li class="menu-item">
+                                    <a href="modulos.html">Módulos Ciper</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" title="title">Cartas a la directora</a>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="#" title="title">Archivo Ciper</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item">
+                                            <a href="archivo.html" title="title">Archivos</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="search.html" title="title">Búsqueda</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="fundacion--donacion.html" title="title">Fundación 1</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="fundacion--suscripcion.html" title="title">Fundación 2</a>
+                                        </li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" title="title">Denuncias y datos</a>
+                                </li>
+                                <li class="menu-item hideme--at-tablet">
+                                    <a href="#" class="button button--top">Donar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" method="" id="search-deploy" class="search--mobile">
+                <input type="text" class="search-box__input" placeholder="Buscar">
+                <!-- <button type="submit" class="search-box__btn icon-elem icon-elem--arrow_forward"></button> -->
+                <a href="search.html" class="search-box__btn icon-elem icon-elem--search" title="title"></a>
+            </form>
+        </nav>
+        <a href="#" class="hideme showme--at-tablet button--fixed">Donar</a>
+        <!-- <button class="button--fixed"></button> -->
+    </header>
+    <main>
+        <section class="horizon container">
+            <div class="gridle-row">
+                <article id="top" class="gridle-gr-10 gridle-prefix-2 gridle-gr-12@tablet gridle-prefix-0@tablet">
+                    <p class="common-box__metacat">
+                        <a href="#" title="title" class="link">Actualidad</a>
+                    </p>
+                    <div class="single__bajada">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eveniet repellendus, nesciunt vero beatae ullam.</p>
+                    </div>
+                    <h1 class="single__title">Las zombis que usaron Penta, LAN y Falabella para tratar de eludir impuestos</h1>
+                    <p class="common-box__date">27.07.2017</p>
+                    <p class="common-box__author">Por <a href="#" title="title" class="link link--small">Catalina Albert</a></p>
+                    <div class="common-box__meta">
+                        Temas: <a href="#" title="title">Educación</a>, <a href="#" title="title">Política</a>, <a href="#" title="title">Justicia</a>
+                    </div>
+                    <div class="common-box__meta">
+                        Personajes: <a href="#" title="title">Manuel Cruzat</a>, <a href="#" title="title">Sebastián Piñera</a>, <a href="#" title="title">Joe Vasconcellos</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="horizon--bottom container">
+            <div class="gridle-row">
+                <div class="gridle-gr-2 hideme--at-tablet no-padding--vertical">
+                    <sidebar data-module="stickyParent" class="sidebar--fixed">
+                        <h4 class="sidebar__title">Indice</h4>
+                        <ul class="sidebar__indice">
+                            <li class="sidebar__item sidebar__item--current">
+                                <a href="#top" title="title" data-func="scrollToTarget" data-offset="20">Top</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#main-row" title="title" data-func="scrollToTarget" data-offset="20">Préambulo</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#item-1" title="title" data-func="scrollToTarget" data-offset="20">Item 1</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#item-2" title="title" data-func="scrollToTarget" data-offset="20">Item 2</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#item-3" title="title" data-func="scrollToTarget" data-offset="20">Item 3</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#item-4" title="title" data-func="scrollToTarget" data-offset="20"> Item 4</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#item-5" title="title" data-func="scrollToTarget" data-offset="20"> Item 5</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#item-6" title="title" data-func="scrollToTarget" data-offset="20"> Item 6</a>
+                            </li>
+                        </ul>
+                    </sidebar>
+                </div>
+                <!--the content holder-->
+                <div class="gridle-gr-10 gridle-gr-12@tablet single__holder">
+                    <!--main row-->
+                    <div id="main-row" class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <img src="images/img/5.jpeg" alt="title" class="elastic-img"/>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <ul class="share-list_centered share-list--row">
+                                <li class="share-list__item hideme--at-tablet"><a href="#" class="icon-elem icon-elem--print"></a></li>
+                                <li class="share-list__item hideme showme--flex-mobile"><a href="#" class="icon-elem icon-elem--perm_phone_msg"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--linkedin"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--twitter"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--facebook" data-module="modal" data-role="modal-btn" data-target="partials/modal-enviar-correo-respuesta.html"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--mail_outline" data-module="modal" data-role="modal-btn" data-target="partials/modal-enviar-correo.html"></a></li>
+                            </ul>
+                            <article class="common-box common-box--module_min">
+                                <h4 class="common-box__title">Especial</h4>
+                                <p class="common-box__text">Financiamiento irregular de la política</p>
+                                <a href="#" class="link">Leer Especial</a>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div id="item-1" class="gridle-row gridle-row--flex-center">
+                        <!--single content-->
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <div class="single__excerpt">
+                                <p>Sebastián Piñera fue pionero en el uso de zombis, empresas quebradas y con pérdida tributaria que le permitieron ahorrar más de $2.800 millones en impuestos. En la segunda parte de esta investigación se muestra cómo otros grandes empresarios –controladores de LAN, Falabella y Penta– recurrieron a la misma estrategia, comprando zombis en un mercado generado por avezados tributaristas que el politólogo J.Winters identifica como la “industria de la defensa de la riqueza”. Si el SII no los hubiera frenado, la pérdida para el Fisco habría sido de más de $1 billón.</p>
+                            </div>
+                            <article class="common-box common-box--denuncia">
+                                <div class="common-box__body">
+                                    <h4 class="common-box__title common-box__title--semi">
+                                        Colabora con Ciper
+                                    </h4>
+                                    <div class="common-box__excerpt">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae repellendus adipisci perspiciatis repellat.</p>
+                                    </div>
+                                </div>
+                                <div class="common-box__button">
+                                    <a href="#" class="button button--ghost button--full" title="title">Denunciar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <!--single side-->
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--module_min">
+                                <h4 class="common-box__title">Documento</h4>
+                                <p class="common-box__text">Declaración de Penta</p>
+                                <p class="common-box__meta">20,25Mb</p>
+                                <a href="#" class="link">Ver archivo</a>
+                            </article>
+                            <article class="common-box common-box--module_min">
+                                <p class="common-box__text">Justificación de gastos</p>
+                                <p class="common-box__meta">20,25Mb</p>
+                                <a href="#" class="link">Ver archivo</a>
+                            </article>
+                            <article class="common-box common-box--module_min">
+                                <p class="common-box__text">Financiamiento irregular de la política</p>
+                                <p class="common-box__meta">20,25Mb</p>
+                                <a href="#" class="link">Ver archivo</a>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div id="item-2" class="gridle-row gridle-row--flex-top">
+                        <!--content-->
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <p>Un ejemplo de esas estrategias es el Fondo de Utilidades Tributables, el famoso FUT. Originado en los ‘80, tras la crisis económica, el FUT buscaba incentivar que los dueños de las empresas no se gastaran sus utilidades y las reinvirtieran. Así, las utilidades que permanecían en las firmas no pagaban impuestos. La abundante evidencia de que la inversión -especialmente en capital fijo- iba de la mano con altas tasas de crecimiento económico, permitía argumentar que el FUT buscaba beneficiar a toda la comunidad. Lorem ipsum dolor sit amet. <a href="#">Este es un link</a> </p>
+                            <p>Sin embargo, las investigaciones de Michel Jorratt, de los economistas Ramón López y Eugenio Figueroa, y Tasha Fairfield, mostraron que parte importante de los recursos acumulados en el FUT no terminaron reinvertidos ni ahorrados.</p>
+                            <!--single quote-->
+                            <div class="single__blockquote">
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quae quas cum nisi autem atque cupiditate cumque culpa velit! Blanditiis dolorum hic, voluptas harum enim quos adipisci nostrum, velit soluta.</blockquote>
+                                <div class="single__blockquote__meta">
+                                    <p class="single__blockquote__author">Tasha Fairfield</p>
+                                    <p class="single__blockquote__cargo">Economista investigadora</p>
+                                </div>
+                                <ul class="share-list--this">
+                                    Compartir
+                                    <li class="share-list__item">
+                                        <a href="#" class="icon-elem icon-elem--twitter"></a>
+                                    </li>
+                                    <li class="share-list__item">
+                                        <a href="#" class="icon-elem icon-elem--facebook"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--side-->
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--module_min">
+                                <h4 class="common-box__title">Personajes</h4>
+                                <p class="common-box__text--light">Motivos de vinculaciones. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <article class="common-box--personaje_min">
+                                    <figure class="common-box--personaje_min__figure">
+                                        <img src="images/img/avatar-5.jpg" alt="title" class="elastic-img"/>
+                                    </figure>
+                                    <div class="common-box--personaje_min__body">
+                                        Sebastián Pínera
+                                    </div>
+                                </article>
+                                <article class="common-box--personaje_min">
+                                    <figure class="common-box--personaje_min__figure">
+                                        <img src="images/img/avatar-5.jpg" alt="title" class="elastic-img"/>
+                                    </figure>
+                                    <div class="common-box--personaje_min__body">
+                                        Sebastián Pínera
+                                    </div>
+                                </article>
+                                <article class="common-box--personaje_min">
+                                    <figure class="common-box--personaje_min__figure">
+                                        <img src="images/img/avatar-5.jpg" alt="title" class="elastic-img"/>
+                                    </figure>
+                                    <div class="common-box--personaje_min__body">
+                                        Sebastián Pínera
+                                    </div>
+                                </article>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <p>Esta serie de reportajes se centra en otra estrategia que dominó entre 1990 y 2004: revivir sociedades de los grupos liderados por Manuel Cruzat y Javier Vial y quehabían quebrado o habían sido sometidas a convenios preventivos en la crisis del ’80. Estas firmas –que hoy se conocen como zombis o cascarones- permanecieron sin actividad, algunas de ellas hasta por dos décadas, hasta que avezados tributaristas las sacaron de sus tumbas para un fin específico: absorber las utilidades de prósperas empresas y de esa manera reducir drásticamente su pago de impuestos.</p>
+                            <p>La astuta jugada que idearon esos avezados tributaristas fue que el Fisco diera el mismo apoyo a empresas prósperas que hacían desaparecer sus utilidades comprando cascarones: firmas que eran solo un rótulo y un libro contable con pérdidas tributarias rótulos contables.</p>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--module_min">
+                                <h4 class="common-box__title">Información adicional</h4>
+                                <p class="common-box__text">Los $2.862 millones en impuestos que Piñera no pagó</p>
+                                <a href="#" class="link">Ver link</a>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="gridle-row gridle-row--flex-start">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <p>Esa lógica fue la que usó el ex presidente Sebastián Piñera con al menos una de las zombis que compró a comienzos de los ‘90 (Compañía de Desarrollo Industrial) y que le sirvió para crear Inversiones Bancard Ltda. Como se expuso en la primera parte de esta serie, esa zombi cargaba con una pérdida tributaria de $44 mil millones, monto que consumió los $39 mil millones en utilidades que Inversiones Bancard generó entre 1997 y 2004. Ese mero ejercicio contable le permitió eludir el pago de $2.862 millones.</p>
+                            <p>-No quiero entrar en detalles, porque no tengo el tiempo, pero uno, cuando crea empresas, busca las maneras de crear oportunidades. De crear oportunidades para todos los chilenos -dijo Piñera en una de las pocas oportunidades en que ha accedido en estos días referirse al tema.</p>
+                            <p>Antes de ahondar en las otras empresas que usaron zombis, es necesario subrayar que esta investigación solo echa un poco de luz en la gran historia no contada sobre las estrategias tributarias usadas en las últimas décadas.</p>
+                            <p>Esa historia es relevante, porque distintas investigaciones académicas internacionales indican que los diseños tributarios agresivos no se entienden en sus causas y consecuencias si se los ve como casos aislados. Por el contrario, son el producto de una industria que intenta a través de distintos mecanismos que los más ricos paguen menos impuestos.</p>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--newsletter common-box--newsletter_min">
+                                <div class="common-box__body">
+                                    <h4 class="common-box__title common-box__title--semi">
+                                        Alerta Ciper
+                                    </h4>
+                                    <div class="common-box__excerpt">
+                                        <p>Suscribete a nuestro newsletter</p>
+                                    </div>
+                                </div>
+                                <form class="common-box__form" data-module="common-form">
+                                    <div class="form-control">
+                                        <input type="text" id="newsletter-nombre" name="newsletter-nombre" class="form-control__field" placeholder="Ingrese su nombre" data-custom-validation="onlyString" required>
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="email" id="newsletter-email" name="newsletter-email" class="form-control__field" placeholder="Ingrese su e-mail" required>
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="submit" class="button button--ghost button--full">
+                                    </div>
+                                </form>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="item-3" class="gridle-row gridle-row--flex-start">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <article class="common-box common-box--donacion common-box--donacion_min">
+                                <h4 class="common-box__title common-box__title--semi">
+                                    #soyCiperista
+                                </h4>
+                                <form class="common-box__form">
+                                    <label class="form-switch">
+                                        <input type="checkbox" >
+                                        <span class="form-switch__input form-switch__input--checkbox"></span>
+                                        <span class="form-switch__label">Quiero realizar una donación Única</span>
+                                    </label>
+                                    <label class="form-switch">
+                                        <input type="checkbox" >
+                                        <span class="form-switch__input form-switch__input--checkbox"></span>
+                                        <span class="form-switch__label">Quiero realizar una donación por suscripción</span>
+                                    </label>
+                                    <input type="submit" class="button button--dark button--full" value="Donar ahora">
+                                    <a href="#" class="form__message--link" title="title">Ver lista de donaciones</a>
+                                </form>
+                            </article>
+                            <p>“La industria de la defensa de la riqueza”, la llama el politólogo Jeffrey Winters, PhD en Yale, “professor” de la Universidad Northwestern y autor del libro Oligarquia (Cambridge University Press, 2011). Y la define como “un ejército de profesionales altamente preparados y bien remunerados” que se desempeñan, fundamentalmente, en bufetes tributarios y diseñan complejas redes legales para que los más ricos puedan ocultar sus ingresos y bienes de la lupa de la autoridad.</p>
+                            <p>Para Winters, los niveles inéditos de concentración de riqueza y de desigualdad en el mundo (en los que Chile destaca) son una demostración del éxito de esta industria.</p>
+                            <p>Algunos nombres y estrategias de la versión chilena de esa industria están retratados en estas páginas.</p>
+                            <div class="single__quote">
+                                <blockquote>Esa lógica fue la que usó el ex presidente Sebastián Piñera con al menos una de las zombis que compró a comienzos de los ‘90</blockquote>
+                                <ul class="share-list--this block">
+                                    Compartir
+                                    <li class="share-list__item">
+                                        <a href="#" class="icon-elem icon-elem--twitter"></a>
+                                    </li>
+                                    <li class="share-list__item">
+                                        <a href="#" class="icon-elem icon-elem--facebook"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--module_min common-box__timeline">
+                                <h4 class="common-box__title">Línea de tiempo</h4>
+                                <div class="common-box__hito">
+                                    <h5 class="common-box__subtitle">01 de Mayo 2016 - AM</h5>
+                                    <p class="common-box__text">Los $2.862 millones en impuestos que Piñera no pagó</p>
+                                </div>
+                                <div class="common-box__hito">
+                                    <h5 class="common-box__subtitle">01 de Mayo 2016 - AM</h5>
+                                    <p class="common-box__text">Los $2.862 millones en impuestos que Piñera no pagó</p>
+                                </div>
+                                <div class="common-box__hito">
+                                    <h5 class="common-box__subtitle">01 de Mayo 2016 - AM</h5>
+                                    <p class="common-box__text">Los $2.862 millones en impuestos que Piñera no pagó</p>
+                                </div>
+                                <div class="common-box__hito">
+                                    <h5 class="common-box__subtitle">01 de Mayo 2016 - AM</h5>
+                                    <p class="common-box__text">Los $2.862 millones en impuestos que Piñera no pagó</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div id="item-4" class="gridle-row gridle-row--flex-start">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <h2>Vanguardia</h2>
+                            <p>Los antecedentes reunidos por CIPER sugieren que entre los dueños de grandes empresas que usaron zombis y que el Servicio de Impuestos Internos (SII) califica de “Grandes Contribuyentes”, Piñera fue un pionero. Y dado que madrugó, ganó. Uno de los factores es porque accedió a las zombis de Manuel Cruzat de mejor calidad o “más frescas”, como dijo su abogado Fernando Barros a CIPER, pues tenían su contabilidad ordenada.</p>
+                            <p>A medida que el éxito de Piñera y de otros pioneros se difundió en el mercado y la oferta de cascarones de Cruzat se agotó (en 1996 se transaron los últimos de los 200 cascarones que dejó el grupo), los tributaristas recurrieron a otro tipo de zombis: las de Javier Vial (Grupo BHC).</p>
+                            <p>Para que estas firmas pudieran ser usadas como cascarones ante el SII, abogados y tributaristas debieron reconstruir 15 ó 20 años de registros contables. De las casi 150 sociedades que tenía el Grupo BHC, solo se pudieron poner a la venta cerca de 30: las que tenían su proceso de quiebra finiquitado.</p>
+                            <p>El “ataque zombi” causó tal impacto en la recaudación, que las alarmas se encendieron y el Ejecutivo envió al Congreso una reforma que buscó ponerle coto a esa práctica: el proyecto “Normas para Combatir la Evasión Tributaria”.</p>
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/gwDoRPcPxtc" frameborder="0" allowfullscreen></iframe>
+                            <ol>
+                                <li>Viendo que el beneficio de los cascarones se cerraba, grandes empresas se apuraron a comprar zombis durante los meses que antecedieron a la promulgación de la Ley Nº 19.738 (junio de 2001). Varias de las operaciones que se describen a continuación forman parte de esta carrera.</li>
+                                <li>Si todas las empresas que compraron zombis en este último tramo (a partir de 2000) hubieran logrado hacer uso de sus pérdidas para rebajar sus impuestos</li>
+                                <li>El Fisco habría dejado de recibir $1 billón 36 mil millones.</li>
+                                <li>Esa fue la cifra que estableció el SII en 2007, en un estudio sobre el impacto tributario de las zombis a partir de la fiscalización que comenzó en 2004.</li>
+                            </ol>
+                            <ul>
+                                <li>Viendo que el beneficio de los cascarones se cerraba, grandes empresas se apuraron a comprar zombis durante los meses que antecedieron a la promulgación de la Ley Nº 19.738 (junio de 2001). Varias de las operaciones que se describen a continuación forman parte de esta carrera.</li>
+                                <li>Si todas las empresas que compraron zombis en este último tramo (a partir de 2000) hubieran logrado hacer uso de sus pérdidas para rebajar sus impuestos</li>
+                                <li>El Fisco habría dejado de recibir $1 billón 36 mil millones.</li>
+                                <li>Esa fue la cifra que estableció el SII en 2007, en un estudio sobre el impacto tributario de las zombis a partir de la fiscalización que comenzó en 2004.</li>
+                            </ul>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--donacion common-box--donacion_min">
+                                <h4 class="common-box__title common-box__title--semi">
+                                    #soyCiperista
+                                </h4>
+                                <form class="common-box__form">
+                                    <label class="form-switch">
+                                        <input type="checkbox" >
+                                        <span class="form-switch__input form-switch__input--checkbox"></span>
+                                        <span class="form-switch__label">Quiero realizar una donación Única</span>
+                                    </label>
+                                    <label class="form-switch">
+                                        <input type="checkbox" >
+                                        <span class="form-switch__input form-switch__input--checkbox"></span>
+                                        <span class="form-switch__label">Quiero realizar una donación por suscripción</span>
+                                    </label>
+                                    <input type="submit" class="button button--dark button--full" value="Donar ahora">
+                                    <a href="#" class="form__message--link" title="title">Ver lista de donaciones</a>
+                                </form>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <div class="single-extracto">
+                                <div class="single-extracto__body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis excepturi aliquam eum officiis expedita, deserunt facilis, at debitis inventore maxime porro doloremque <em>this is a highlight</em>. Quae aut repudiandae vitae, repellendus dolores recusandae!</p>
+                                </div>
+                                <p class="single-extracto__footer">Extracto de documento (...)</p>
+                            </div>
+                            <div class="single-mail">
+                                <div class="single-mail__body">
+                                    <p class="desde-para">De: <strong>Nombre de Empresa</strong></p>
+                                    <p class="desde-para">Para: <strong>correo@elecrtronico.cl</strong></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis excepturi aliquam eum officiis expedita, <em>deserunt facilis</em> at debitis inventore maxime porro doloremque. Quae aut repudiandae vitae, <em>repellendus dolores recusandae</em>!</p>
+                                </div>
+                                <p class="single-mail__footer">Extracto de documento (...)</p>
+                            </div>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--module_min">
+                                <h4 class="common-box__title">Información adicional</h4>
+                                <p class="common-box__text">Los $2.862 millones en impuestos que Piñera no pagó</p>
+                                <a href="#" class="link">Ver link</a>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <div class="slider single__slider" data-module="slider">
+
+                                <div class="slider__items" data-role="slider-list">
+                                    <div class="slider__slide" data-role="slider-slide">
+                                        <img src="images/img/1.jpeg" class="cover-img">
+                                    </div>
+                                    <div class="slider__slide" data-role="slider-slide">
+                                        <img src="images/img/2.jpeg" class="cover-img">
+                                    </div>
+                                    <div class="slider__slide" data-role="slider-slide">
+                                        <img src="images/img/3.jpeg" class="cover-img">
+                                    </div>
+                                    <div class="slider__slide" data-role="slider-slide">
+                                        <img src="images/img/4.jpeg" class="cover-img">
+                                    </div>
+                                    <div class="slider__slide" data-role="slider-slide">
+                                        <img src="images/img/5.jpeg" class="cover-img">
+                                    </div>
+                                </div>
+
+                                <div class="slider__arrows">
+                                    <button class="slider__arrow slider__arrow--prev" data-role="slider-arrow" data-direction="prev"></button>
+                                    <button class="slider__arrow slider__arrow--next" data-role="slider-arrow" data-direction="next"></button>
+                                </div>
+
+                                <div class="slider__thumbnails">
+                                    <button class="slider__thumbnail slider__thumbnail--current" data-role="slider-thumbnail" data-target="0">
+                                        <img src="images/img/1.jpeg">
+                                    </button>
+                                    <button class="slider__thumbnail" data-role="slider-thumbnail" data-target="1">
+                                        <img src="images/img/2.jpeg">
+                                    </button>
+                                    <button class="slider__thumbnail" data-role="slider-thumbnail" data-target="2">
+                                        <img src="images/img/3.jpeg">
+                                    </button>
+                                    <button class="slider__thumbnail" data-role="slider-thumbnail" data-target="3">
+                                        <img src="images/img/4.jpeg">
+                                    </button>
+                                    <button class="slider__thumbnail" data-role="slider-thumbnail" data-target="4">
+                                        <img src="images/img/5.jpeg">
+                                    </button>
+                                </div>
+
+                                <div class="slider__footers">
+                                    <p class="slider__foot slider__foot--current" data-role="slider-footing" data-target="0">Pie de foto 1</p>
+                                    <p class="slider__foot" data-role="slider-footing" data-target="1">Pie de foto 2</p>
+                                    <p class="slider__foot" data-role="slider-footing" data-target="2">Pie de foto 3</p>
+                                    <p class="slider__foot" data-role="slider-footing" data-target="3">Pie de foto 4</p>
+                                    <p class="slider__foot" data-role="slider-footing" data-target="4">Pie de foto 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+                            <article class="common-box common-box--denuncia common-box--denuncia_min">
+                                <div class="common-box__body">
+                                    <h4 class="common-box__title common-box__title--semi">
+                                        Colabora con Ciper
+                                    </h4>
+                                    <div class="common-box__excerpt">
+                                        <p>¿Tiene una denuncia? ¿Una historia digna de investigarse?</p>
+                                    </div>
+                                </div>
+                                <div class="common-box__button">
+                                    <a href="#" class="button button--ghost button--full" title="title">Denunciar</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div id="item-5" class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <article class="single__audio" data-module="audio-js" data-target="http://users.skynet.be/fa046054/home/P22/track06.mp3">
+                                <button data-role="button-play" class="single__audio__play button button--dark">
+                                    <i class="icon-elem icon-elem--play_arrow"></i>
+                                </button>
+                                <button data-role="button-pause" class="single__audio__pause remove button button--dark">
+                                    <i class="icon-elem icon-elem--pause"></i>
+                                </button>
+                                <div class="single__audio__info">
+                                    <p class="single__audio__name">Audio de prueba 1</p>
+                                    <p class="single__audio__duration">00:35:00</p>
+                                </div>
+                            </article>
+
+                            <article class="single__audio" data-module="audio-js" data-target="../source/audio-1.mp3">
+                                <button data-role="button-play" class="single__audio__play button button--dark">
+                                    <i class="icon-elem icon-elem--play_arrow"></i>
+                                </button>
+                                <button data-role="button-pause" class="single__audio__pause remove button button--dark">
+                                    <i class="icon-elem icon-elem--pause"></i>
+                                </button>
+                                <div class="single__audio__info">
+                                    <p class="single__audio__name">Audio de prueba 2</p>
+                                    <p class="single__audio__duration">01:15:00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <article class="single__collapse">
+                                <button class="single__collapse__button">Colapsable 1<span class="icon-elem icon-elem--arrow_drop_down"></span></button>
+                                <div class="single__collapse__body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium impedit odio commodi, voluptate, possimus praesentium nisi, sapiente labore quos, velit sunt excepturi neque quibusdam. Delectus numquam temporibus inventore perspiciatis consequuntur.</p>
+                                </div>
+                            </article>
+
+                            <article class="single__collapse">
+                                <button class="single__collapse__button">Colapsable 2<span class="icon-elem icon-elem--arrow_drop_down"></span></button>
+                                <div class="single__collapse__body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium impedit odio commodi, voluptate, possimus praesentium nisi, sapiente labore quos, velit sunt excepturi neque quibusdam. Delectus numquam temporibus inventore perspiciatis consequuntur.</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem in iusto quos aut, a temporibus minima commodi blanditiis sequi! Distinctio, voluptates, ipsam? Possimus laboriosam sint veritatis dignissimos? Unde, dicta, voluptatibus.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+
+                        </div>
+                    </div>
+
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <!--single__table para scroll en eje Y-->
+                            <p class="scroll-y__message hideme showme--at-tablet">Desliza para ver más</p>
+                            <div class="scroll-y">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Opción 1</th>
+                                            <th>Opción 2</th>
+                                            <th>Opción 3</th>
+                                            <th>Opción 4</th>
+                                            <th>Opción 5</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+
+                        </div>
+                    </div>
+
+                    <div id="item-6" class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <h5 class="single__mintitle">Descarga de archivos</h5>
+                            <article class="single__file">
+                                <div class="single__file__body">
+                                    <p class="single__file__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam repudiandae repellendus adipisci perspiciatis repellat.</p>
+                                    <p class="single__file__info">9,4 MB</p>
+                                </div>
+                                <div class="single__file__button">
+                                    <a href="#" class="button button--ghost button--full" title="title" download>Descargar</a>
+                                </div>
+                            </article>
+                            <article class="single__file">
+                                <div class="single__file__body">
+                                    <p class="single__file__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nisi atque suscipit quos tempore culpa voluptatum nostrum. Quo, quas.</p>
+                                    <p class="single__file__info">3,4 MB</p>
+                                </div>
+                                <div class="single__file__button">
+                                    <a href="#" class="button button--ghost button--full" title="title" download>Descargar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side">
+
+                        </div>
+                    </div>
+
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <h5 class="single__mintitle">Textos, citas y fuentes</h5>
+                            <article class="single__fuente">
+                                <div class="single__fuente__body">
+                                    <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum mollitia eos dignissimos sapiente rem pariatur ducimus necessitatibus hic, alias provident eligendi expedita non fuga, natus, corporis maiores eius repellat eveniet.</p>
+                                </div>
+                            </article>
+                            <article class="single__fuente">
+                                <div class="single__fuente__body">
+                                    <p>1. Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. Dolorum mollitia eos dignissimos sapiente rem pariatur ducimus necessitatibus hic, alias provident eligendi expedita non fuga, natus, corporis maiores eius repellat eveniet. <a href="#" title="title" href="_blank">Más información</a></p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side"></div>
+                    </div>
+
+                    <div class="gridle-row gridle-row--flex-center">
+                        <div class="gridle-gr-9 gridle-gr-12@tablet single__content">
+                            <h5 class="single__mintitle">Notas de la redacción</h5>
+                            <article class="single__fuente">
+                                <div class="single__fuente__body">
+                                    <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores ea eligendi id consequuntur delectus porro eos suscipit error necessitatibus placeat. <a href="#" title="title" href="_blank">Más información</a></p>
+                                </div>
+                            </article>
+
+                            <article class="single__idea">
+                                <h4 class="single__idea__title">Idea Ciper</h4>
+                                <div class="single__idea__body">
+                                    <p>El “ataque zombi” causó tal impacto en la recaudación, que las alarmas se encendieron y el Ejecutivo envió al Congreso una reforma que buscó ponerle coto a esa práctica: el proyecto “Normas para Combatir la Evasión Tributaria”.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="gridle-gr-3 gridle-gr-12@tablet single__side"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray horizon">
+            <div class="container">
+                <div class="gridle-row">
+                    <div class="gridle-gr-2 gridle-gr-12@tablet no-padding--top">
+                        <a href="#top" title="title" class="link--top" data-func="scrollToTarget">Ir a arriba</a>
+                    </div>
+                    <div class="gridle-gr-10 gridle-gr-12@tablet single__holder">
+                        <div class="gridle-row">
+                            <div class="gridle-gr-9 gridle-gr-12@tablet gridle-sufix-3 gridle-sufix-0@tablet no-padding--top">
+                                <h2 class="common-box__title common-box__title--big">15 comentarios</h2>
+
+                                <article class="single__commentary">
+                                    <div class="single__commentary__whowhen">
+                                        <span class="single__commentary__who">Juan Carlos Cerró</span>
+                                        <span class="single__commentary__when">24.10.2017</span>
+                                    </div>
+                                    <div class="single__commentary__body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, est odio sunt nihil, veniam ullam numquam beatae sit sapiente magnam architecto! Aliquid dolorem dolore a qui ut cumque, eaque velit.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore hic error illum quam. Quibusdam, cumque cum labore qui nostrum reprehenderit, tenetur dolorem corrupti vero impedit nulla, laudantium natus, quaerat saepe!</p>
+                                    </div>
+                                </article>
+                                <article class="single__commentary">
+                                    <div class="single__commentary__whowhen">
+                                        <span class="single__commentary__who">Lorem ipsum un nombre largo</span>
+                                        <span class="single__commentary__when">24.10.2017</span>
+                                    </div>
+                                    <div class="single__commentary__body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, est odio sunt nihil, veniam ullam numquam beatae sit sapiente magnam architecto! Aliquid dolorem dolore a qui ut cumque, eaque velit.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore hic error illum quam. Quibusdam, cumque cum labore qui nostrum reprehenderit, tenetur dolorem corrupti vero impedit nulla, laudantium natus, quaerat saepe!</p>
+                                    </div>
+                                </article>
+
+                                <div class="font-centered">
+                                    <button class="button button--wide button--dark">Ver todos los comentarios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="horizon container">
+            <div class="gridle-row">
+                <div class="gridle-gr-10 gridle-prefix-2 gridle-gr-12@tablet gridle-prefix-0@tablet no-padding">
+                    <div class="gridle-row">
+                        <div class="gridle-gr-9 gridle-sufix-2 gridle-gr-12@tablet gridle-sufix-0@tablet no-padding">
+                            <form action="" class="gridle-row" data-module="common-form">
+                                <div class="form-control gridle-gr-12 no-padding--vertical">
+                                    <h2 class="common-box__title common-box__title--big">¿Algo que agregar?</h2>
+                                </div>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet" data-error-message="Debe contener sólo valores alfabéticos">
+                                    <label for="nombre-single" class="form-control__label">* Nombre</label>
+                                    <input type="text" name="nombre-single" id="nombre-single" class="form-control__field" placeholder="Ingrese su nombre" required>
+                                    <span class="form-control__text">Debe contener sólo valores alfabéticos</span>
+                                </div>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet" data-error-message="Debe llenar este campo con un e-mail válido">
+                                    <label for="email-single" class="form-control__label">* Email (no será publicado)</label>
+                                    <input type="email" name="email-single" id="email-single" class="form-control__field" placeholder="ejemplo@ciper.cl" required>
+                                    <span class="form-control__text">Debe llenar este campo con un e-mail válido</span>
+                                </div>
+                                <div class="form-control gridle-gr-12" data-error-message="Debe contener sólo valores alfabéticos">
+                                    <label for="comentario-single" class="form-control__label">* Comentario</label>
+                                    <textarea name="comentario-single" id="comentario-single" rows="5" placeholder="Ingrese su comentario" class="form-control__field" required></textarea>
+                                    <span class="form-control__text">Debe contener sólo valores alfabéticos</span>
+                                </div>
+                                <div class="form-control gridle-gr-12 font-centered">
+                                    <input type="submit" class="button button--wide button--dark" value="Publicar comentario">
+                                    <span class="form-control__message">* Todos los campos son obligatorios</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-bar" >
+		<div class="container gridle-no-gutter">
+			<div class="gridle-row">
+				<div class="gridle-gr-3 gridle-gr-12@tablet border--right no-padding--vertical--but-tablet">
+					<a class="app-brand" href="index.html" title="Home">
+						<img src="images/logos/ciper_logo_full_dark.svg" alt="Logo" class="app-brand__logo">
+                    </a>
+                    <div class="footer-bar__data">
+                        <p class="footer-bar__par">Directora: Mónica González</p>
+                        <p class="footer-bar__par">Editores: Pedro Ramírez - Juan Andrés Guzmán</p>
+                    </div>
+                    <div class="footer-bar__data">
+                        <p class="footer-bar__par"><a href="#" title="title" target="_blank">José Miguel de la Barra 412</a>, 3er. Piso, Santiago de Chile.</p>
+                        <p class="footer-bar__par">Fono: <a href="#" title="title" target="_blank">(56-2) 26382629</a> / Fax: <a href="#" title="title" target="_blank">(56-2) 26382629</a></p>
+                        <p class="footer-bar__par">Todos los Derechos Reservados. &copy;2017</p>
+                    </div>
+				</div>
+				<div class="gridle-gr-2 gridle-gr-6@tablet gridle-prefix-1 gridle-prefix-0@tablet no-padding--vertical--but-tablet">
+                    <h4 class="footer-bar__title"><a href="#">Secciones</a></h4>
+                    <a href="#" title="title" class="footer-bar__link">Investigación</a>
+                    <a href="#" title="title" class="footer-bar__link">Actualidad</a>
+                    <a href="#" title="title" class="footer-bar__link">Columnas</a>
+                    <a href="#" title="title" class="footer-bar__link">Transparencia</a>
+                    <a href="#" title="title" class="footer-bar__link">Radar</a>
+				</div>
+				<div class="gridle-gr-2 gridle-gr-6@tablet no-padding--vertical--but-tablet">
+                    <h4 class="footer-bar__title"><a href="#">Archivo Ciper</a></h4>
+                    <a href="#" title="title" class="footer-bar__link">Especiales</a>
+                    <a href="#" title="title" class="footer-bar__link">Personajes</a>
+                    <a href="#" title="title" class="footer-bar__link">Autores</a>
+                    <a href="#" title="title" class="footer-bar__link">Temas</a>
+                </div>
+                <div class="gridle-gr-2 gridle-gr-6@tablet no-padding--vertical--but-tablet">
+                    <h4 class="footer-bar__title"><a href="#">Sobre Ciper</a></h4>
+                    <a href="#" title="title" class="footer-bar__link">Donaciones</a>
+                    <a href="#" title="title" class="footer-bar__link">Denuncias y Datos</a>
+                    <a href="#" title="title" class="footer-bar__link">Cartas a la Directora</a>
+                    <a href="#" title="title" class="footer-bar__link">Contacto</a>
+                    <a href="#" title="title" class="footer-bar__link">Newsletter</a>
+                    <a href="#" title="title" class="footer-bar__link">Blog</a>
+                </div>
+                <div class="gridle-gr-2 gridle-gr-6@tablet no-padding--vertical--but-tablet">
+                    <p class="footer-bar__social">
+                        <a href="#" title="title" target="_blank" class="social-link social-link--linkedin"></a>
+                        <a href="#" title="title" target="_blank" class="social-link social-link--twitter"></a>
+                        <a href="#" title="title" target="_blank" class="social-link social-link--facebook"></a>
+                    </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="scripts/min/main.min.js"></script>
+</body>
+</html>

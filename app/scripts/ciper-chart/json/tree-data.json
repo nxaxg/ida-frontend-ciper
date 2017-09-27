@@ -1,0 +1,110 @@
+var tree_data = [
+{
+    "name": "Top level",
+    "parent": "null",
+    "children": 
+    [{
+        "name": "personaje a1",
+        "parent": "Top Level",
+        // "age": 39,
+        // "town": "Iowa City",
+        "title": "Cargo del personaje",
+        "role": '13 Artículos en común',
+        "connection": 1,
+        "children": [
+            {
+                "name": "Sebastian Piñera",
+                "type": "head",
+                "parent": "personaje a1",
+                "age": 39,
+                "connection": 1,
+                "children": [{
+                    "name": "personaje b1",
+                    "parent": "Sebastian Piñera",
+                    // "age": 39,
+                    // "town": "Iowa City",
+                    "title": "Cargo del personaje",
+                    "role": '13 Artículos en común',
+                    "connection": 1
+                }]
+            }
+        ]
+    },{
+        "name": "personaje a2",
+        "parent": "Top Level",
+        // "age": 39,
+        // "town": "Iowa City",
+        "title": "Cargo del personaje",
+        "role": '13 Artículos en común',
+        "connection": 2,
+        "children": [{
+            "name": "Sebastian Piñera",
+            "type": "head",
+            "parent": "personaje a2",
+            "connection": 2,
+            "children": [{
+                "name": "personaje b2",
+                "parent": "Sebastian Piñera",
+                // "age": 39,
+                // "town": "Iowa City",
+                "title": "Cargo del personaje",
+                "role": '13 Artículos en común',
+                "connection": 2,
+            }]
+        }]
+    },{
+        "name": "personaje a3",
+        "parent": "Top Level",
+        "age": 63,
+        // "age": 39,
+        // "town": "Iowa City",
+        "title": "Cargo del personaje",
+        "role": '13 Artículos en común',
+        "connection": 3,
+        "children": [{
+            "name": "Sebastian Piñera",
+            "type": "head",
+            "parent": "personaje a3",
+            "connection": 3,
+            "children": [{
+                "name": "personaje b3",
+                "parent": "Sebastian Piñera",
+                // "age": 39,
+                // "town": "Iowa City",
+                "title": "Cargo del personaje",
+                "role": '13 Artículos en común',
+                "connection": 3
+            }]
+        }]
+    },
+    //last row
+    {
+        "name": "personaje a4",
+        "parent": "Top Level",
+        // "age": 39,
+        // "town": "Iowa City",
+        "title": "Cargo del personaje",
+        "role": '13 Artículos en común',
+        "connection": 4,
+        "children": [{
+            "name": "Sebastian Piñera",
+            "type": "head",
+            "parent": "personaje a4",
+            // "age": 39,
+            // "town": "Iowa City",
+            "title": "Candidato presidencial",
+            "role": '13 Artículos en común',
+            "connection": 4,
+            "children": [{
+                "name": "personaje b4",
+                "parent": "Sebastian Piñera",
+                // "age": 39,
+                // "town": "Iowa City",
+                "title": "Cargo del personaje",
+                "role": '13 Artículos en común',
+                "connection": 4
+            }]
+        }]
+    }]
+}
+];

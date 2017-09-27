@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciper | Fundación</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400, 400i,700|Merriweather:300,400,500,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-bar">
+        <section class="top-bar">
+            <div class="container" data-area-name="menu-top">
+                <div class="top-bar__items" data-mq-change="tablet" data-match-area="menu-top@tablet" data-unmatch-area="menu-top">
+                    <div class="top-bar__items top-bar__items--left">
+                        <a href="modulos.html" class="top-bar__item top-bar__item--current">Módulos Ciper</a>
+                        <a href="#" class="top-bar__item">Cartas a la directora</a>
+                    </div>
+                    <div class="top-bar__items top-bar__items--right">
+                        <span class="top-bar__item upper">Archivo:</span>
+                        <a href="archivo.html" class="top-bar__item">Archivo</a>
+                        <a href="search.html" class="top-bar__item">Búsqueda</a>
+                        <a href="fundacion--donacion.html" class="top-bar__item">Fundacion 1</a>
+                        <a href="fundacion--suscripcion.html" class="top-bar__item">Fundacion 2</a>
+                        <a href="#" class="top-bar__item--last">Denuncias y datos</a>
+                        <a href="#" class="button button--top">Donar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="nav-bar" data-module="nav-bar">
+            <div class="container">
+                <div class="nav-bar__holder">
+                    <div class="nav-bar__brand">
+                        <a class="app-brand app-brand--inline" href="index.html">
+                                        <img class="app-brand__logo" src="images/logos/ciper_logo_light.svg" alt=""/> 
+                                    </a>
+                    </div>
+                    <div class="nav-bar__body" data-role="nav-body">
+                        <button class="nav-bar__deploy-button" aria-label="Ver menú" data-role="nav-deployer">
+                                        <span></span>
+                                    </button>
+                        <div class="search-form">
+                            <button id="search-deployer" class="search-btn icon-elem icon-elem--search">
+                                        </button>
+                        </div>
+                        <div class="nav-bar__menu-holder">
+                            <ul class="nav-bar__menu nav-bar__menu--primary">
+                                <li class="menu-item hideme showme--at-tablet">
+                                    <a href="index.html" title="title">Inicio</a>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="index.html">Tipos home</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="home--especial.html" title="title">Home especial</a></li>
+                                        <li class="submenu__item"><a href="home--personaje.html" title="title">Home personaje</a></li>
+                                        <li class="submenu__item"><a href="home--foto.html" title="title">Home foto</a></li>
+                                        <li class="submenu__item"><a href="home--no-foto.html" title="title">Home sin foto</a></li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="portadilla.html">Portadillas</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="portadilla--autores.html" title="title">Portadilla autores</a></li>
+                                        <li class="submenu__item"><a href="portadilla--debate.html" title="title">Portadilla debate</a></li>
+                                        <li class="submenu__item"><a href="portadilla--especiales.html" title="title">Portadilla especiales</a></li>
+                                        <li class="submenu__item"><a href="portadilla--personajes.html" title="title">Portadilla personajes</a></li>
+                                        <li class="submenu__item"><a href="portadilla--sin-bajada.html" title="title">Portadilla sin bajada</a></li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="#">Single</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="single--autor.html" title="title">Single autor</a></li>
+                                        <li class="submenu__item"><a href="single--especial.html" title="title">Single especial</a></li>
+                                        <li class="submenu__item"><a href="single--personaje.html" title="title">Single personaje</a></li>
+                                        <li class="submenu__item"><a href="single--publicacion.html" title="title">Single publicación</a></li>
+                                        <li class="submenu__item"><a href="single--pagina.html" title="title">Single página</a></li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="radar.html" title="title">Radar</a>
+                                </li>
+                                <li class="menu-item hideme--at-medium">
+                                    <form action="" method="" class="search-box">
+                                        <input type="text" class="search-box__input" placeholder="Buscar">
+                                        <!-- <button class="search-box__btn icon-elem icon-elem--search"></button> -->
+                                        <a href="search.html" class="search-box__btn icon-elem icon-elem--search" title="title"></a>
+                                    </form>
+                                </li>
+                            </ul>
+                            <ul class="nav-bar__menu nav-bar__menu--primary hideme showme--at-tablet">
+                                <li class="menu-item">
+                                    <a href="modulos.html">Módulos Ciper</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" title="title">Cartas a la directora</a>
+                                </li>
+                                <li class="menu-item menu-item--has-submenu" data-role="touch-submenu">
+                                    <a href="#" title="title">Archivo Ciper</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item">
+                                            <a href="archivo.html" title="title">Archivos</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="search.html" title="title">Búsqueda</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="fundacion--donacion.html" title="title">Fundación 1</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="fundacion--suscripcion.html" title="title">Fundación 2</a>
+                                        </li>
+                                    </ul>
+                                    <span class="icon-elem icon-elem--chevron_down click-handler" data-role="touch-submenu-deployer"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" title="title">Denuncias y datos</a>
+                                </li>
+                                <li class="menu-item hideme--at-tablet">
+                                    <a href="#" class="button button--top">Donar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" method="" id="search-deploy" class="search--mobile">
+                <input type="text" class="search-box__input" placeholder="Buscar">
+                <!-- <button type="submit" class="search-box__btn icon-elem icon-elem--arrow_forward"></button> -->
+                <a href="search.html" class="search-box__btn icon-elem icon-elem--search" title="title"></a>
+            </form>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="gridle-gr-10 gridle-prefix-1 gridle-gr-12@tablet gridle-prefix-0@tablet no-padding">
+
+            <section class="horizon">
+                <h1 class="main__title main__title--inner">Donaciones Fundación CIPER</h1>
+                <div class="common-box__excerpt">
+                    <p>¡Hemos optimizado nuestro servicio digital! Para seguir mejorando, los invitamos a hacer un aporte al periodismo de investigación. CIPER necesita de todos sus lectores para asegurar su sostenibilidad y garantizar su independencia editorial (<a href="#" title="title">vea aquí la carta con que lanzamos la campaña “Yo apoyo a CIPER”</a>).</p>
+                    <p>En el formulario, puede marcar si desea que su nombre aparezca en nuestra lista pública de donantes.  ¡Muchas gracias por apoyarnos!</p>
+                </div>
+            </section>
+
+            <section class="horizon--bottom">
+                <div class="folder-box">
+                    <div class="folder-box__buttons">
+                        <button data-func="showTab" data-target="tipo" class="folder-box__button active">
+                            <span>1</span>
+                            <span>Tipo de donación</span>
+                        </button>
+                        <button data-func="showTab" data-target="datos" class="folder-box__button">
+                            <span>2</span>
+                            <span>Datos de contacto</span>
+                        </button>
+                        <button data-func="showTab" data-target="monto" class="folder-box__button">
+                            <span>3</span>
+                            <span>Monto y medio de donación</span>
+                        </button>
+                        <button data-func="showTab" data-target="confirmacion" class="folder-box__button">
+                            <span>4</span>
+                            <span>Confirmación</span>
+                        </button>
+                    </div>
+                    <div class="folder-box__targets">
+                        <!--folder-->
+                        <div class="folder-box__target active" data-tabname="tipo">
+                            <div class="folder-box__control">
+                                <div class="form-control__pop form-control__pop--danger">
+                                    Selecciona una de las opciones ofrecidas.
+                                </div>
+                            </div>
+                            <form action="" method="" data-module="common-form" data-validzr-handled="true" novalidate>
+                                <div class="folder-box__control">
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-tipo">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">
+                                            <span class="form-switch__label--title">Quiero realizar una donación única</span>
+                                            <span class="form-switch__label--text">Donación Única correspondiente a un monto voluntario para una ocasión. </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="folder-box__control">
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-tipo">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">
+                                            <span class="form-switch__label--title">Quiero realizar una donación por suscripción</span>
+                                            <span class="form-switch__label--text">Donación mensual o anual por un monto fijo. </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-control form-control--flex">
+                                     <button type="submit" class="button button--dark button--wide">Siguiente</button> 
+                                </div>
+                            </form>
+                        </div>
+                        <!--folder-->
+                        <div class="folder-box__target" data-tabname="datos">
+                            <div class="folder-box__control">
+                                <h3 class="common-box__title common-box__title--medium">Quiero realizar una donación por suscripción</h3>
+                                <div class="common-box__excerpt">
+                                    <p>Donación mensual o anual por un monto fijo. <a href="#">(cambiar)</a></p>
+                                </div>
+                            </div>
+                            <form action="" method="" class="gridle-row" data-module="common-form" data-validzr-handled="true" novalidate>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet" data-error-message="Debe contener sólo valores alfabéticos">
+                                    <label for="nombre-fundacion" class="form-control__label">Nombre</label>
+                                    <input type="text" name="nombre-fundacion" id="nombre-fundacion" class="form-control__field" placeholder="Ingrese su nombre" data-custom-validation="onlyString" required>
+                                    <span class="form-control__text">Debe contener sólo valores alfabéticos</span>
+                                </div>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet" data-error-message="Debe contener sólo valores alfabéticos">
+                                    <label for="apellidop-fundacion" class="form-control__label">Apellido Paterno</label>
+                                    <input type="text" name="apellidop-fundacion" id="apellidop-fundacion" class="form-control__field" placeholder="Ingrese su apellido paterno" data-custom-validation="onlyString" required>
+                                    <span class="form-control__text">Debe contener sólo valores alfabéticos</span>
+                                </div>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet" data-error-message="Debe contener sólo valores alfabéticos">
+                                    <label for="apellidom-fundacion" class="form-control__label">Apellido materno</label>
+                                    <input type="text" name="apellidom-fundacion" id="apellidom-fundacion" class="form-control__field" placeholder="Ingrese su apellido materno" data-custom-validation="onlyString" required>
+                                    <span class="form-control__text">Debe contener sólo valores alfabéticos</span>
+                                </div>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet" data-error-message="Debe llenar este campo con un RUT válido">
+                                    <label for="rut-fundacion" class="form-control__label">Rut</label>
+                                    <input type="text" name="rut-fundacion" id="rut-fundacion" class="form-control__field" placeholder="Ingrese su RUT" data-custom-validation="validRut" data-autoformat="true">
+                                    <span class="form-control__text">Debe llenar este campo con un RUT válido"</span>
+                                </div>
+                                <div class="form-control gridle-gr-12" data-error-message="Debe llenar este campo con un e-mail válido">
+                                    <label for="email-fundacion" class="form-control__label">E-mail</label>
+                                    <input type="email" name="email-fundacion" id="email-fundacion" class="form-control__field" placeholder="Ingrese su e-mail" required>
+                                    <span class="form-control__text">Debe llenar este campo con un e-mail válido</span>
+                                </div>
+                                <div class="form-control gridle-gr-12">
+                                    <label class="form-switch form-switch--square">
+                                        <input type="checkbox" >
+                                        <span class="form-switch__input form-switch__input--checkbox"></span>
+                                        <span class="form-switch__label">Deseo aparecer en la lista pública de donantes</span>
+                                    </label>
+                                    <label class="form-switch form-switch--square">
+                                        <input type="checkbox" >
+                                        <span class="form-switch__input form-switch__input--checkbox"></span>
+                                        <span class="form-switch__label">Campo 1</span>
+                                    </label>
+                                </div>
+                                <div class="form-control form-control--flex">
+                                    <button id="button-1" class="button button--wide">Anterior</button> 
+                                    <button id="button-1" type="submit" class="button button--dark button--wide">Siguiente</button>  
+                                </div>
+                            </form>
+                        </div>
+                        <!--folder-->
+                        <div class="folder-box__target" data-tabname="monto">
+                            <div class="folder-box__control">
+                                <h3 class="common-box__title common-box__title--medium">Quiero realizar una donación por suscripción</h3>
+                                <div class="common-box__excerpt">
+                                    <p>Donación mensual o anual por un monto fijo. <a href="#">(cambiar)</a></p>
+                                </div>
+                            </div>
+                            <!--donación suscripción-->
+                            <form action="" method="" class="folder-box__control gridle-row" data-module="common-form" data-validzr-handled="true" novalidate>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet">
+                                    <label for="donacion-duracion" class="form-control__label">1. Duración de la suscripción</label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-duracion">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">3 meses</span>
+                                    </label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-duracion">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">6 meses</span>
+                                    </label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-duracion">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">9 meses</span>
+                                    </label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-duracion">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">12 meses</span>
+                                    </label>
+                                </div>
+                                <div class="form-control gridle-gr-6 gridle-gr-12@tablet">
+                                    <label for="donacion-monto" class="form-control__label">2. Monto de la suscripción</label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-monto">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">$3.000 mensuales</span>
+                                    </label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-monto">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">$5.000 mensuales</span>
+                                    </label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-monto">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">$10.000 mensuales</span>
+                                    </label>
+                                    <label class="form-switch form-switch--black">
+                                        <input type="radio" name="donacion-monto">
+                                        <span class="form-switch__input form-switch__input--radio"></span>
+                                        <span class="form-switch__label">Otro monto</span>
+                                    </label>
+                                    <div class="form-control" data-error-message="Ingrese sólo números">
+                                        <input type="text" class="form-control__field form-control__field--min" placeholder="Ingrese el monto que desea donar" data-custom-validation="onlyNumbers">
+                                        <span class="form-control__text">Ingrese sólo números</span>
+                                    </div>
+                                </div>
+                                <div class="form-control form-control--flex">
+                                     <button class="button button--wide">Anterior</button>
+                                     <button type="submit" class="button button--dark button--wide">Siguiente</button>  
+                                </div>
+                            </form>
+                        </div>
+                        <!--folder-->
+                        <div class="folder-box__target" data-tabname="confirmacion">
+                            <h3 class="common-box__title common-box__title--medium">¡Natalia, muchísimas gracias!</h3>
+                            <div class="common-box__excerpt">
+                                <p>Has realizado una donación de $10.000.</p>
+                                <p>Enviamos un certificado de donación a su correo electrónico.</p>
+                                <p>Con su aporte seguiremos trabajando por un periodismo independiente y al servicio de la sociedad. Compártelo en las RRSS para que tus seguidores se enteren. </p>
+                            </div>
+                            <ul class="share-list share-list--row share-list--share ">
+                                <li class="share-list__item  hideme--at-tablet"><a href="#" class="icon-elem icon-elem--print"></a></li>
+                                <li class="share-list__item hideme showme--flex-mobile"><a href="#" class="icon-elem icon-elem--perm_phone_msg"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--linkedin"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--twitter"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--facebook"></a></li>
+                                <li class="share-list__item"><a href="#" class="icon-elem icon-elem--mail_outline"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="footer-bar" >
+		<div class="container gridle-no-gutter">
+			<div class="gridle-row">
+				<div class="gridle-gr-3 gridle-gr-12@tablet border--right no-padding--vertical--but-tablet">
+					<a class="app-brand" href="index.html" title="Home">
+						<img src="images/logos/ciper_logo_full_dark.svg" alt="Logo" class="app-brand__logo">
+                    </a>
+                    <div class="footer-bar__data">
+                        <p class="footer-bar__par">Directora: Mónica González</p>
+                        <p class="footer-bar__par">Editores: Pedro Ramírez - Juan Andrés Guzmán</p>
+                    </div>
+                    <div class="footer-bar__data">
+                        <p class="footer-bar__par"><a href="#" title="title" target="_blank">José Miguel de la Barra 412</a>, 3er. Piso, Santiago de Chile.</p>
+                        <p class="footer-bar__par">Fono: <a href="#" title="title" target="_blank">(56-2) 26382629</a> / Fax: <a href="#" title="title" target="_blank">(56-2) 26382629</a></p>
+                        <p class="footer-bar__par">Todos los Derechos Reservados. &copy;2017</p>
+                    </div>
+				</div>
+				<div class="gridle-gr-2 gridle-gr-6@tablet gridle-prefix-1 gridle-prefix-0@tablet no-padding--vertical--but-tablet">
+                    <h4 class="footer-bar__title"><a href="#">Secciones</a></h4>
+                    <a href="#" title="title" class="footer-bar__link">Investigación</a>
+                    <a href="#" title="title" class="footer-bar__link">Actualidad</a>
+                    <a href="#" title="title" class="footer-bar__link">Columnas</a>
+                    <a href="#" title="title" class="footer-bar__link">Transparencia</a> 
+                    <a href="#" title="title" class="footer-bar__link">Radar</a> 
+				</div>
+				<div class="gridle-gr-2 gridle-gr-6@tablet no-padding--vertical--but-tablet">
+                    <h4 class="footer-bar__title"><a href="#">Archivo Ciper</a></h4>
+                    <a href="#" title="title" class="footer-bar__link">Especiales</a>
+                    <a href="#" title="title" class="footer-bar__link">Personajes</a>
+                    <a href="#" title="title" class="footer-bar__link">Autores</a>
+                    <a href="#" title="title" class="footer-bar__link">Temas</a>    
+                </div>
+                <div class="gridle-gr-2 gridle-gr-6@tablet no-padding--vertical--but-tablet">
+                    <h4 class="footer-bar__title"><a href="#">Sobre Ciper</a></h4>
+                    <a href="#" title="title" class="footer-bar__link">Donaciones</a>
+                    <a href="#" title="title" class="footer-bar__link">Denuncias y Datos</a>
+                    <a href="#" title="title" class="footer-bar__link">Cartas a la Directora</a>
+                    <a href="#" title="title" class="footer-bar__link">Contacto</a>
+                    <a href="#" title="title" class="footer-bar__link">Newsletter</a>
+                    <a href="#" title="title" class="footer-bar__link">Blog</a>
+                </div>
+                <div class="gridle-gr-2 gridle-gr-6@tablet no-padding--vertical--but-tablet">
+                    <p class="footer-bar__social">
+                        <a href="#" title="title" target="_blank" class="social-link social-link--linkedin"></a>
+                        <a href="#" title="title" target="_blank" class="social-link social-link--twitter"></a>
+                        <a href="#" title="title" target="_blank" class="social-link social-link--facebook"></a>
+                    </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="scripts/min/main.min.js"></script>
+</body>
+</html>
